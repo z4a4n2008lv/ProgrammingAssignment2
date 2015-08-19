@@ -26,8 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-    #x<-as.data.frame(t(x))
-    
+ 
     invertedMatrix <- x$getInverted()   #get Cashed inverted matrix
     if(!is.null(invertedMatrix)){       #check if found
         message("getting cashed inverted matrix")
